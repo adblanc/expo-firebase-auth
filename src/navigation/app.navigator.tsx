@@ -5,7 +5,7 @@ import { auth } from '../auth/lib/firebase';
 import { HomeScreen } from '../auth/screens/HomeScreen';
 import { LoginScreen } from '../auth/screens/LoginScreen';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<AppStackParamsList>();
 
 export const AppNavigator = () => {
   const [isSignedIn, setIsSignedIn] = useState(false)
